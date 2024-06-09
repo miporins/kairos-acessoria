@@ -1,0 +1,14 @@
+@use './abstract/mixins';
+@use './abstract/variaveis';
+@use './abstract/medias';
+@use './components/header';
+@use './components/title-section';
+@use './components/descricao-section';
+@use './components/carousel';
+@use './components/services-section';
+@use './components/form-section';
+@use './components/footer';
+@use './components/duvidas';
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bad+Script&family=Comfortaa:wght@300..700&family=Ephesis&display=swap');

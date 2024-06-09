@@ -1,0 +1,49 @@
+@use './variaveis';
+
+@media (max-width: 992px) { 
+  
+    header {
+        .logo-img {
+            margin: 0 20px;
+        }
+
+        nav {
+            .navbar-nav {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    main {
+        #title-section {
+            img {
+                display: none;
+            }
+        }
+
+        #descricao-section {
+            .checks {
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+
+        #carousel-section {
+            display: none;
+        }
+
+        #services-section {
+            padding-top: 1rem;
+
+            .lead {
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 33px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

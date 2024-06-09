@@ -1,0 +1,40 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+#services-section {
+
+    button {
+        @include mixins.btn-secondary-red;
+        background: variaveis.$secondary;
+        border: 1px solid variaveis.$secondary;
+    }
+
+    .lead {
+        font-size: 16px;
+        color: variaveis.$tertiary;
+    }
+
+    h2 {
+        font-size: 30px!important;
+    }
+
+    h1 {
+        font-size: 40px!important;
+    }
+
+    .btn-primary {
+        @include mixins.btn-secondary-red;
+    }
+     
+    .row {
+        background: variaveis.$bg-white;
+        margin: 15px 0;
+        border-radius: 15px;
+        border: 1px solid transparent;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+
+        &:hover {
+            border: 1px solid rgb(229, 175, 189, 0.6);
+        }
+    }
+}

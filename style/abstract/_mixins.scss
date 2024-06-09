@@ -1,0 +1,44 @@
+@use './variaveis';
+
+@mixin btn-primary-pink {
+    background-color: variaveis.$primary;
+    color: variaveis.$secondary;
+    border: 1px solid variaveis.$primary;
+    transition: .3s ease-in-out;
+    &:hover {
+        background-color: variaveis.$secondary;
+        border: 1px solid variaveis.$secondary;
+        color: variaveis.$bg-white;
+    }
+
+    &:active {
+        background-color: variaveis.$quaternary !important;
+        border: 1px solid variaveis.$quaternary !important;
+    }
+}
+
+@mixin btn-secondary-red {
+    background-color: variaveis.$quaternary;
+    color: variaveis.$bg-white;
+    border: 1px solid variaveis.$quaternary;
+    transition: .3s ease-in-out;
+    font-weight: bold;
+
+    &:hover {
+        background-color: variaveis.$primary;
+        border: 1px solid variaveis.$primary;
+        color: variaveis.$secondary;
+    }
+
+    &:active {
+        background-color: variaveis.$secondary !important;
+        border: 1px solid variaveis.$secondary !important;
+        color: variaveis.$bg-white;
+    }
+}
+
+@mixin text-title {
+    font-family: 'Bad Script', sans-serif;
+    font-size: 32px;
+    color: variaveis.$secondary;
+}

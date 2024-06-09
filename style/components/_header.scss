@@ -1,0 +1,47 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+body {
+  background: variaveis.$bg-offwhite !important;
+
+  header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: variaveis.$bg-offwhite !important;
+      //top bar
+      .logo-img {
+              max-width: 70px;
+      }
+  
+      .navbar {
+        --bs-navbar-toggler-icon-bg: url("/assets/seta-escura.png") !important;
+        --bs-navbar-toggler-border-color: none !important;
+        
+        .nav-link {
+          font-size: 14px;
+          color: variaveis.$secondary;
+          border: 1px solid variaveis.$bg-offwhite;
+          transition: .4s ease-in-out;
+    
+          &:hover {
+            border: 1px solid variaveis.$quaternary;
+            color: variaveis.$quaternary;
+          }
+          
+          &.active {
+            background-color: variaveis.$quaternary;
+            color: variaveis.$bg-white;
+          }
+        }
+  
+        .navbar-toggler {
+          padding: 0 !important;
+        }
+  
+      }
+  
+      .btn {
+        @include mixins.btn-primary-pink;
+      }
+      //top bar end
+    }
+}

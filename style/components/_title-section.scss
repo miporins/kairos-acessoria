@@ -1,0 +1,19 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+main {
+    #title-section {
+        background: linear-gradient(to left, variaveis.$quaternary, variaveis.$tertiary);
+        .my-5 {
+        margin-top: 0 !important;
+
+        h1 {
+            font-size: 6rem;
+        }
+
+        .btn-outline-primary {
+            @include mixins.btn-primary-pink;
+          }
+      }
+    }
+}

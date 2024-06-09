@@ -1,0 +1,35 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+#descricao-section {
+    .descricao-text {
+        p {
+            max-width: 700px;
+            margin: auto;
+        }
+    }
+
+    .checks {
+        flex-direction: column;
+
+        .check {
+            display: flex;
+            align-items: center;
+
+            p {
+                margin: 0 !important;
+                line-height: 2rem !important;
+            }
+        }
+    }
+
+    div {
+        .btn-primary {
+            @include mixins.btn-secondary-red;
+        }
+
+        button {
+            @extend .transition;
+        }
+    }
+}

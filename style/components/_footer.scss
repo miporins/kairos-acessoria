@@ -1,0 +1,18 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+body {
+
+    .border-top {
+        border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+        background: variaveis.$quaternary;
+    
+        .text-body-secondary {
+            color: variaveis.$primary !important;
+        }
+
+        .logo-footer {
+            max-width: 40px;
+        }
+    }
+}

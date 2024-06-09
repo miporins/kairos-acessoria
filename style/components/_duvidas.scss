@@ -1,0 +1,10 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+#duvidas-section {
+    background: variaveis.$quaternary !important;
+
+    button {
+        @include mixins.btn-primary-pink;
+    }
+}

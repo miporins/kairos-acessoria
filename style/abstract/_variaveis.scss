@@ -1,0 +1,42 @@
+$bg-white: #ffffff;
+$bg-offwhite: #FAF0E6;
+$more-primary: #ffc6d5;
+$primary: #e6b0be;
+$secondary: #b42447;
+$tertiary: #4b0e1e;
+$quaternary: #530e20;
+
+.primary { color: $primary;}
+
+.secondary { color: $secondary;}
+
+.tertiary { color: $tertiary; }
+
+.quaternary { color: $quaternary; }
+
+.alex-brush-regular {
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px !important;
+}
+
+.comfortaa-400 {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bad-script-regular {
+  font-family: "Bad Script", cursive;
+  font-weight: 400;
+  font-size: 35px;
+  font-style: normal;
+}
+
+.transition { transition: .3s ease-in-out; }
+
+.text-primary {
+  color: $primary !important;
+}
