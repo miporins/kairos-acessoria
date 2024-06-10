@@ -3,16 +3,16 @@
 
 main {
     #title-section {
-        background: linear-gradient(to left, variaveis.$quaternary, variaveis.$tertiary);
+        background: linear-gradient(240deg, variaveis.$tertiary, variaveis.$quaternary, #c59da7);
         .my-5 {
         margin-top: 0 !important;
 
         h1 {
-            font-size: 6rem;
+            font-size: 70px !important;
         }
 
         .btn-outline-primary {
-            @include mixins.btn-primary-pink;
+            @include mixins.btn-secondary-red;
           }
       }
     }

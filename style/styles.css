@@ -127,28 +127,30 @@ body header .btn:active {
 }
 
 main #title-section {
-  background: linear-gradient(to left, #530e20, #4b0e1e);
+  background: linear-gradient(240deg, #4b0e1e, #530e20, #c59da7);
 }
 main #title-section .my-5 {
   margin-top: 0 !important;
 }
 main #title-section .my-5 h1, main #title-section .my-5 .h1 {
-  font-size: 6rem;
+  font-size: 70px !important;
 }
 main #title-section .my-5 .btn-outline-primary {
-  background-color: #e6b0be;
-  color: #b42447;
-  border: 1px solid #e6b0be;
+  background-color: #530e20;
+  color: #ffffff;
+  border: 1px solid #530e20;
   transition: 0.3s ease-in-out;
+  font-weight: bold;
 }
 main #title-section .my-5 .btn-outline-primary:hover {
-  background-color: #b42447;
-  border: 1px solid #b42447;
-  color: #ffffff;
+  background-color: #e6b0be;
+  border: 1px solid #e6b0be;
+  color: #b42447;
 }
 main #title-section .my-5 .btn-outline-primary:active {
-  background-color: #530e20 !important;
-  border: 1px solid #530e20 !important;
+  background-color: #b42447 !important;
+  border: 1px solid #b42447 !important;
+  color: #ffffff;
 }
 
 #descricao-section .descricao-text p {
