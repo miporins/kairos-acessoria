@@ -45,3 +45,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
   
   // Adicione o listener para o evento de redimensionamento
   window.addEventListener('resize', handleResize);
+
+  // Add header class on scroll
+  document.addEventListener("DOMContentLoaded", function() {
+    var header = document.querySelector("header"); // Seleciona o elemento header
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 50) { // Ajuste o valor conforme necessário
+            header.classList.add("header-scrolled"); // Adiciona a classe ao header
+        } else {
+            header.classList.remove("header-scrolled"); // Remove a classe do header
+        }
+    });
+});

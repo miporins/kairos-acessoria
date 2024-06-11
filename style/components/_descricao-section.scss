@@ -25,7 +25,7 @@
 
     div {
         .btn-primary {
-            @include mixins.btn-secondary-red;
+            @include mixins.btn-primary-pink;
         }
 
         button {

@@ -50,15 +50,39 @@
   color: #e6b0be !important;
 }
 
+.no-select {
+  -webkit-user-select: none; /* Chrome, Safari, Opera */
+  -moz-user-select: none; /* Firefox */ /* Internet Explorer/Edge */
+  user-select: none; /* Padrão */
+}
+
 @media (max-width: 992px) {
-  header .logo-img {
-    margin: 0 20px;
+  header .show {
+    margin: 25px 0 !important;
   }
-  header nav .navbar-nav {
-    margin-top: 20px;
+  header .container-fluid, header .container-sm, header .container-md, header .container-lg, header .container-xl, header .container-xxl {
+    flex-direction: column !important;
+  }
+  header.header-scrolled .navbar {
+    --bs-navbar-toggler-icon-bg: url("/assets/arrowdown-red.png") !important;
   }
   main #title-section img {
     display: none;
+  }
+  main #title-section button {
+    background-color: #e6b0be;
+    color: #b42447;
+    border: 1px solid #e6b0be;
+    transition: 0.3s ease-in-out;
+  }
+  main #title-section button:hover {
+    background-color: #b42447;
+    border: 1px solid #b42447;
+    color: #ffffff;
+  }
+  main #title-section button:active {
+    background-color: #530e20 !important;
+    border: 1px solid #530e20 !important;
   }
   main #descricao-section .checks {
     justify-content: center;
@@ -83,32 +107,42 @@ body {
   background: #FAF0E6 !important;
 }
 body header {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  background: #FAF0E6 !important;
+  transition: background-color 0.5s, box-shadow 0.3s;
+  z-index: 2000;
 }
 body header .logo-img {
-  max-width: 70px;
+  max-width: 60px;
 }
 body header .navbar {
-  --bs-navbar-toggler-icon-bg: url("/assets/seta-escura.png") !important;
+  --bs-navbar-toggler-icon-bg: url("/assets/arrowdown-pink.png") !important;
   --bs-navbar-toggler-border-color: none !important;
+  --bs-navbar-padding-y: 0!important;
 }
 body header .navbar .nav-link {
   font-size: 14px;
-  color: #b42447;
-  border: 1px solid #FAF0E6;
-  transition: 0.4s ease-in-out;
+  color: #ffffff;
+  border: 1px solid transparent;
+  transition: 0.3s ease-in-out;
 }
 body header .navbar .nav-link:hover {
-  border: 1px solid #530e20;
-  color: #530e20;
-}
-body header .navbar .nav-link.active {
-  background-color: #530e20;
+  border: 1px solid #e6b0be;
   color: #ffffff;
 }
-body header .navbar .navbar-toggler {
-  padding: 0 !important;
+body header .navbar .nav-link.active {
+  background-color: #e6b0be;
+  color: #b42447;
+}
+body header .navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+body header .navbar .navbar-toggler-icon .open-icon {
+  display: none;
+}
+body header .navbar .navbar-toggler-icon .close-icon {
+  display: block;
+}
+body header .navbar .menu-btn button {
+  width: 170px;
 }
 body header .btn {
   background-color: #e6b0be;
@@ -124,6 +158,24 @@ body header .btn:hover {
 body header .btn:active {
   background-color: #530e20 !important;
   border: 1px solid #530e20 !important;
+}
+body header.header-scrolled {
+  background-color: #FAF0E6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+body header.header-scrolled .nav-link {
+  color: #b42447;
+  border: 1px solid #FAF0E6;
+}
+body header.header-scrolled .nav-link:hover {
+  border: 1px solid #b42447;
+  color: #b42447;
+}
+body header.header-scrolled .nav-link.active {
+  background-color: #530e20;
+  color: #ffffff;
+  border: 1px solid #530e20;
 }
 
 main #title-section {
@@ -152,6 +204,15 @@ main #title-section .my-5 .btn-outline-primary:active {
   border: 1px solid #b42447 !important;
   color: #ffffff;
 }
+main #title-section .my-5 .img-title-home img {
+  max-width: 398px !important;
+}
+main .title-services {
+  background: linear-gradient(200deg, rgb(49, 49, 49), rgb(27, 27, 27), #635e60) !important;
+}
+main .title-services .img-title-services {
+  max-width: 280px !important;
+}
 
 #descricao-section .descricao-text p {
   max-width: 700px;
@@ -169,21 +230,19 @@ main #title-section .my-5 .btn-outline-primary:active {
   line-height: 2rem !important;
 }
 #descricao-section div .btn-primary {
-  background-color: #530e20;
-  color: #ffffff;
-  border: 1px solid #530e20;
+  background-color: #e6b0be;
+  color: #b42447;
+  border: 1px solid #e6b0be;
   transition: 0.3s ease-in-out;
-  font-weight: bold;
 }
 #descricao-section div .btn-primary:hover {
-  background-color: #e6b0be;
-  border: 1px solid #e6b0be;
-  color: #b42447;
+  background-color: #b42447;
+  border: 1px solid #b42447;
+  color: #ffffff;
 }
 #descricao-section div .btn-primary:active {
-  background-color: #b42447 !important;
-  border: 1px solid #b42447 !important;
-  color: #ffffff;
+  background-color: #530e20 !important;
+  border: 1px solid #530e20 !important;
 }
 #carousel-section {
   background: #530e20;

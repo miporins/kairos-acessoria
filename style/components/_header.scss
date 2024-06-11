@@ -1,47 +1,85 @@
 @use '../abstract/variaveis';
 @use '../abstract/mixins';
+@use '../abstract/medias';
 
 body {
   background: variaveis.$bg-offwhite !important;
 
   header {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    background: variaveis.$bg-offwhite !important;
-      //top bar
-      .logo-img {
-              max-width: 70px;
-      }
+    transition: background-color 0.5s, box-shadow 0.3s;
+    z-index: 2000;
+    
   
+      .logo-img {
+              max-width: 60px;
+      }
+
       .navbar {
-        --bs-navbar-toggler-icon-bg: url("/assets/seta-escura.png") !important;
+        --bs-navbar-toggler-icon-bg: url("/assets/arrowdown-pink.png") !important;
         --bs-navbar-toggler-border-color: none !important;
+        --bs-navbar-padding-y: 0!important;
         
         .nav-link {
           font-size: 14px;
-          color: variaveis.$secondary;
-          border: 1px solid variaveis.$bg-offwhite;
-          transition: .4s ease-in-out;
+          color: variaveis.$bg-white;
+          border: 1px solid transparent;
+          transition: .3s ease-in-out;
     
           &:hover {
-            border: 1px solid variaveis.$quaternary;
-            color: variaveis.$quaternary;
+            border: 1px solid variaveis.$primary;
+            color: variaveis.$bg-white;
           }
           
           &.active {
-            background-color: variaveis.$quaternary;
-            color: variaveis.$bg-white;
+            background-color: variaveis.$primary;
+            color: variaveis.$secondary;
           }
         }
-  
-        .navbar-toggler {
-          padding: 0 !important;
+
+        .navbar-toggler:focus {
+          box-shadow: none;
         }
-  
+
+        .navbar-toggler-icon {
+          .open-icon {
+            display: none;
+          }
+
+          .close-icon {
+            display: block;
+          }
+        }
+
+        .menu-btn {
+          button {
+            width: 170px;
+          }
+        }
       }
   
       .btn {
         @include mixins.btn-primary-pink;
       }
-      //top bar end
     }
+
+    //Cor de fundo ao rolar
+    header.header-scrolled {
+      background-color: variaveis.$bg-offwhite;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      .nav-link {
+        color: variaveis.$secondary;
+        border: 1px solid variaveis.$bg-offwhite;
+        &:hover {
+          border: 1px solid variaveis.$secondary;
+          color: variaveis.$secondary;
+        }
+        
+        &.active {
+          background-color: variaveis.$quaternary;
+          color: variaveis.$bg-white;
+          border: 1px solid variaveis.$quaternary;
+        }
+      }
+  }
 }

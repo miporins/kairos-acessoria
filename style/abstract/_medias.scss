@@ -1,16 +1,22 @@
 @use './variaveis';
+@use './mixins';
 
 @media (max-width: 992px) { 
   
     header {
-        .logo-img {
-            margin: 0 20px;
+        .show {
+            margin: 25px 0 !important;
         }
 
-        nav {
-            .navbar-nav {
-                margin-top: 20px;
-            }
+        .container-fluid {
+            flex-direction: column !important;
+        }
+    }
+
+    header.header-scrolled {
+  
+        .navbar {
+            --bs-navbar-toggler-icon-bg: url("/assets/arrowdown-red.png") !important;
         }
     }
 
@@ -18,6 +24,10 @@
         #title-section {
             img {
                 display: none;
+            }
+
+            button {
+                @include mixins.btn-primary-pink;
             }
         }
 

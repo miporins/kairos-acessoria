@@ -1,5 +1,6 @@
 @use '../abstract/variaveis';
 @use '../abstract/mixins';
+@use '../abstract/medias';
 
 main {
     #title-section {
@@ -13,7 +14,20 @@ main {
 
         .btn-outline-primary {
             @include mixins.btn-secondary-red;
-          }
+        }
+
+        .img-title-home {
+            img {
+                max-width: 398px !important;
+            }
+        }
       }
+    }
+
+    .title-services {
+        background: linear-gradient(200deg, rgb(49, 49, 49), rgb(27, 27, 27), #635e60) !important;
+        .img-title-services {
+            max-width: 280px !important;
+        }
     }
 }
