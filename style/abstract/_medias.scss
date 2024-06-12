@@ -22,8 +22,12 @@
 
     main {
         #title-section {
-            img {
+            .bg-header, img {
                 display: none;
+            }
+
+            .img-title-services {
+                margin: 0!important;
             }
 
             button {

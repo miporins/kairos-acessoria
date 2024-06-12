@@ -66,8 +66,11 @@
   header.header-scrolled .navbar {
     --bs-navbar-toggler-icon-bg: url("/assets/arrowdown-red.png") !important;
   }
-  main #title-section img {
+  main #title-section .bg-header, main #title-section img {
     display: none;
+  }
+  main #title-section .img-title-services {
+    margin: 0 !important;
   }
   main #title-section button {
     background-color: #e6b0be;
