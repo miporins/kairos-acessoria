@@ -58,7 +58,7 @@
 
 @media (max-width: 992px) {
   header .show {
-    margin: 25px 0 !important;
+    margin: 25px 0 18px 0 !important;
   }
   header .container-fluid, header .container-sm, header .container-md, header .container-lg, header .container-xl, header .container-xxl {
     flex-direction: column !important;
@@ -77,6 +77,8 @@
     color: #b42447;
     border: 1px solid #e6b0be;
     transition: 0.3s ease-in-out;
+    font-weight: bold;
+    font-family: "Comfortaa", sans-serif;
   }
   main #title-section button:hover {
     background-color: #b42447;
@@ -114,12 +116,32 @@ body header {
   z-index: 2000;
 }
 body header .logo-img {
-  max-width: 60px;
+  max-width: 55px;
 }
 body header .navbar {
   --bs-navbar-toggler-icon-bg: url("/assets/arrowdown-pink.png") !important;
   --bs-navbar-toggler-border-color: none !important;
   --bs-navbar-padding-y: 0!important;
+}
+body header .navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+body header .navbar .btn {
+  background-color: #e6b0be;
+  color: #b42447;
+  border: 1px solid #e6b0be;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+  font-family: "Comfortaa", sans-serif;
+}
+body header .navbar .btn:hover {
+  background-color: #b42447;
+  border: 1px solid #b42447;
+  color: #ffffff;
+}
+body header .navbar .btn:active {
+  background-color: #530e20 !important;
+  border: 1px solid #530e20 !important;
 }
 body header .navbar .nav-link {
   font-size: 14px;
@@ -135,32 +157,31 @@ body header .navbar .nav-link.active {
   background-color: #e6b0be;
   color: #b42447;
 }
-body header .navbar .navbar-toggler:focus {
-  box-shadow: none;
+body header .navbar .navbar-toggler-icon.open-icon {
+  background-image: url("/assets/arrowup-red.png");
 }
-body header .navbar .navbar-toggler-icon .open-icon {
-  display: none;
-}
-body header .navbar .navbar-toggler-icon .close-icon {
-  display: block;
+body header .navbar .navbar-toggler-icon.close-icon {
+  background-image: url("/assets/arrowdown-pink.png");
 }
 body header .navbar .menu-btn button {
   width: 170px;
 }
-body header .btn {
-  background-color: #e6b0be;
+body header nav.menu-open {
+  background-color: #FAF0E6;
+  border-radius: 0 0 10px 10px;
+}
+body header nav.menu-open .nav-link {
   color: #b42447;
-  border: 1px solid #e6b0be;
-  transition: 0.3s ease-in-out;
+  border: 1px solid #FAF0E6;
 }
-body header .btn:hover {
-  background-color: #b42447;
+body header nav.menu-open .nav-link:hover {
   border: 1px solid #b42447;
-  color: #ffffff;
+  color: #b42447;
 }
-body header .btn:active {
-  background-color: #530e20 !important;
-  border: 1px solid #530e20 !important;
+body header nav.menu-open .nav-link.active {
+  background-color: #530e20;
+  color: #ffffff;
+  border: 1px solid #530e20;
 }
 body header.header-scrolled {
   background-color: #FAF0E6;
@@ -179,6 +200,9 @@ body header.header-scrolled .nav-link.active {
   background-color: #530e20;
   color: #ffffff;
   border: 1px solid #530e20;
+}
+body header.header-scrolled .navbar-toggler-icon.close-icon {
+  background-image: url("/assets/arrowdown-red.png");
 }
 
 main #title-section {
@@ -237,6 +261,8 @@ main .title-services .img-title-services {
   color: #b42447;
   border: 1px solid #e6b0be;
   transition: 0.3s ease-in-out;
+  font-weight: bold;
+  font-family: "Comfortaa", sans-serif;
 }
 #descricao-section div .btn-primary:hover {
   background-color: #b42447;
@@ -271,6 +297,8 @@ main .title-services .img-title-services {
   color: #b42447;
   border: 1px solid #e6b0be;
   transition: 0.3s ease-in-out;
+  font-weight: bold;
+  font-family: "Comfortaa", sans-serif;
   font-weight: bold;
   font-size: 1rem !important;
 }
@@ -363,6 +391,8 @@ main .title-services .img-title-services {
   color: #b42447;
   border: 1px solid #e6b0be;
   transition: 0.3s ease-in-out;
+  font-weight: bold;
+  font-family: "Comfortaa", sans-serif;
 }
 #form-section .form-email button:hover {
   background-color: #b42447;
@@ -401,6 +431,8 @@ body .border-top .logo-footer {
   color: #b42447;
   border: 1px solid #e6b0be;
   transition: 0.3s ease-in-out;
+  font-weight: bold;
+  font-family: "Comfortaa", sans-serif;
 }
 #duvidas-section button:hover {
   background-color: #b42447;
@@ -410,6 +442,41 @@ body .border-top .logo-footer {
 #duvidas-section button:active {
   background-color: #530e20 !important;
   border: 1px solid #530e20 !important;
+}
+
+#descricao-servicos .descricao-cards .card {
+  --bs-card-spacer-y: 0!important;
+  border-radius: 15px;
+}
+#descricao-servicos .descricao-cards h5, #descricao-servicos .descricao-cards .h5 {
+  font-family: "Bad Script", cursive;
+  font-weight: 400;
+  font-size: 35px;
+  font-style: normal;
+  color: #b42447;
+  font-size: 24px;
+}
+#descricao-servicos .descricao-cards p {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #4b0e1e;
+  font-size: 14px;
+  opacity: 0.7;
+}
+#descricao-servicos .descricao-cards a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border: 2px solid transparent;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+#descricao-servicos .descricao-cards a:hover {
+  border: 2px solid #e6b0be;
+}
+#descricao-servicos .descricao-cards img {
+  max-width: 50px;
 }
 
 :root,

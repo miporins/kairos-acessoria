@@ -1,10 +1,29 @@
 @use './variaveis';
 
+@mixin font-title {
+    font-family: "Bad Script", cursive;
+    font-weight: 400;
+    font-size: 35px;
+    font-style: normal;
+    color: variaveis.$secondary;
+}
+
+@mixin font-subtitle {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: variaveis.$tertiary;
+}
+
 @mixin btn-primary-pink {
     background-color: variaveis.$primary;
     color: variaveis.$secondary;
     border: 1px solid variaveis.$primary;
     transition: .3s ease-in-out;
+    font-weight: bold;
+    font-family: 'Comfortaa', sans-serif;
+
     &:hover {
         background-color: variaveis.$secondary;
         border: 1px solid variaveis.$secondary;
@@ -37,8 +56,17 @@
     }
 }
 
-@mixin text-title {
-    font-family: 'Bad Script', sans-serif;
-    font-size: 32px;
+@mixin menu-scrolled {
     color: variaveis.$secondary;
+    border: 1px solid variaveis.$bg-offwhite;
+    &:hover {
+      border: 1px solid variaveis.$secondary;
+      color: variaveis.$secondary;
+    }
+    
+    &.active {
+      background-color: variaveis.$quaternary;
+      color: variaveis.$bg-white;
+      border: 1px solid variaveis.$quaternary;
+    }
 }

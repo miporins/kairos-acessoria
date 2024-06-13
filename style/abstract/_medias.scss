@@ -5,7 +5,7 @@
   
     header {
         .show {
-            margin: 25px 0 !important;
+            margin: 25px 0 18px 0 !important;
         }
 
         .container-fluid {
@@ -14,7 +14,6 @@
     }
 
     header.header-scrolled {
-  
         .navbar {
             --bs-navbar-toggler-icon-bg: url("/assets/arrowdown-red.png") !important;
         }

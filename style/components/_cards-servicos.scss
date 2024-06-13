@@ -1,0 +1,39 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+#descricao-servicos {
+    .descricao-cards {
+
+        .card {
+            --bs-card-spacer-y: 0!important;
+            border-radius: 15px;
+        }
+
+        h5 {
+            @include mixins.font-title;
+            font-size: 24px;
+        }
+
+        p {
+            @include mixins.font-subtitle;
+            font-size: 14px;
+            opacity: .7;
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+            border: 2px solid transparent;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+
+            &:hover {
+                border: 2px solid variaveis.$primary;
+            }
+        }
+
+        img {
+            max-width: 50px;
+        }
+    }
+}
