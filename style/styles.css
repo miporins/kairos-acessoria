@@ -57,11 +57,63 @@
 }
 
 @media (max-width: 992px) {
+  header {
+    transition: background-color 0.5s, box-shadow 0.3s;
+    z-index: 2000;
+  }
   header .show {
     margin: 25px 0 18px 0 !important;
   }
   header .container-fluid, header .container-sm, header .container-md, header .container-lg, header .container-xl, header .container-xxl {
     flex-direction: column !important;
+  }
+  header .navbar {
+    --bs-navbar-toggler-icon-bg: url("/assets/arrowdown-pink.png") !important;
+    --bs-navbar-toggler-border-color: none !important;
+    --bs-navbar-padding-y: 0!important;
+  }
+  header .navbar .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  header .navbar .btn {
+    background-color: #e6b0be;
+    color: #b42447;
+    border: 1px solid #e6b0be;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    font-family: "Comfortaa", sans-serif;
+  }
+  header .navbar .btn:hover {
+    background-color: #b42447;
+    border: 1px solid #b42447;
+    color: #ffffff;
+  }
+  header .navbar .btn:active {
+    background-color: #530e20 !important;
+    border: 1px solid #530e20 !important;
+  }
+  header .navbar .nav-link {
+    font-size: 14px;
+    color: #ffffff;
+    border: 1px solid transparent;
+    transition: 0.3s ease-in-out;
+  }
+  header .navbar .nav-link:hover {
+    border: 1px solid #e6b0be;
+    color: #ffffff;
+  }
+  header .navbar .nav-link.active {
+    background-color: #e6b0be;
+    color: #b42447;
+  }
+  header .navbar .navbar-toggler-icon.open-icon {
+    background-image: url("/assets/arrowup-red.png");
+  }
+  header .navbar .navbar-toggler-icon.close-icon {
+    background-image: url("/assets/arrowdown-pink.png");
+  }
+  header .navbar .menu-btn button {
+    width: 170px;
   }
   header.header-scrolled .navbar {
     --bs-navbar-toggler-icon-bg: url("/assets/arrowdown-red.png") !important;

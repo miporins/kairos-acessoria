@@ -4,6 +4,9 @@
 @media (max-width: 992px) { 
   
     header {
+        transition: background-color 0.5s, box-shadow 0.3s;
+        z-index: 2000;
+
         .show {
             margin: 25px 0 18px 0 !important;
         }
@@ -11,6 +14,41 @@
         .container-fluid {
             flex-direction: column !important;
         }
+
+        .navbar {
+            --bs-navbar-toggler-icon-bg: url("/assets/arrowdown-pink.png") !important;
+            --bs-navbar-toggler-border-color: none !important;
+            --bs-navbar-padding-y: 0!important;
+    
+            .navbar-toggler:focus { box-shadow: none; }
+    
+            .btn { @include mixins.btn-primary-pink; }
+            
+            .nav-link {
+              font-size: 14px;
+              color: variaveis.$bg-white;
+              border: 1px solid transparent;
+              transition: .3s ease-in-out;
+        
+              &:hover {
+                border: 1px solid variaveis.$primary;
+                color: variaveis.$bg-white;
+              }
+              
+              &.active {
+                background-color: variaveis.$primary;
+                color: variaveis.$secondary;
+              }
+            }
+    
+            .navbar-toggler-icon {
+              &.open-icon { background-image: url("/assets/arrowup-red.png"); }
+            
+              &.close-icon { background-image: url("/assets/arrowdown-pink.png"); }
+            }
+    
+            .menu-btn { button { width: 170px; } }
+          }
     }
 
     header.header-scrolled {
