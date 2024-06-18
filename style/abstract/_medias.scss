@@ -49,6 +49,13 @@
     
             .menu-btn { button { width: 170px; } }
           }
+
+          nav.menu-open {
+            background-color: variaveis.$bg-offwhite;
+            border-radius: 0 0 10px 10px;
+          
+            .nav-link { @include mixins.menu-scrolled; }
+          }
     }
 
     header.header-scrolled {

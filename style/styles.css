@@ -115,6 +115,23 @@
   header .navbar .menu-btn button {
     width: 170px;
   }
+  header nav.menu-open {
+    background-color: #FAF0E6;
+    border-radius: 0 0 10px 10px;
+  }
+  header nav.menu-open .nav-link {
+    color: #b42447;
+    border: 1px solid #FAF0E6;
+  }
+  header nav.menu-open .nav-link:hover {
+    border: 1px solid #b42447;
+    color: #b42447;
+  }
+  header nav.menu-open .nav-link.active {
+    background-color: #530e20;
+    color: #ffffff;
+    border: 1px solid #530e20;
+  }
   header.header-scrolled .navbar {
     --bs-navbar-toggler-icon-bg: url("/assets/arrowdown-red.png") !important;
   }
