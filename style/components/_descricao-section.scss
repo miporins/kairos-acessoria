@@ -24,12 +24,12 @@
     }
 
     div {
-        .btn-primary {
-            @include mixins.btn-primary-pink;
-        }
+        .btn-primary { @include mixins.btn-primary-pink; }
 
-        button {
-            @extend .transition;
-        }
+        button { @extend .transition; }
     }
+}
+
+#descricao-servicos {
+    .btns-services { .btn-primary { @include mixins.btn-primary-pink; } }
 }

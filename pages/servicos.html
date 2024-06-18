@@ -56,29 +56,31 @@
               <h1 class="pt-5 alex-brush-regular text-light">Serviços</h1>
 
               <div class="mx-auto">
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5 comfortaa-400">
-                  <a href="#descricao-section"><button type="button" class="btn btn-outline-primary fw-bold btn-lg px-4 rounded-pill shadow-lg">Conhecer</button></a>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center flex-column  mb-5 comfortaa-400 aos-init aos-animate">
+                  <a href="#descricao-servicos"><button type="button" class="btn btn-outline-primary fw-bold btn-lg px-5 rounded-pill shadow-lg">Conhecer</button></a>
+
+                  <img src="/assets/down-arrow-title.png" alt="" width="50px" class="m-auto" data-aos="fade-down" data-aos-duration="900">
                 </div>
               </div>
 
             </div>
 
             <div class="bg-header d-flex justify-content-center img-title-services ms-5" data-aos="fade-down-left" data-aos-duration="900">
-              <img src="/assets/Black.png" alt="mulher segurando celular" width="100%" height="100%">
+              <img src="/assets/Black.png" alt="Mulher de braços cruzados" width="100%" height="100%">
             </div>
 
           </div>
         </section>
 
-        <section id="descricao-servicos" class="container text-center">
-          <div class="my-5">
-            <img src="/assets/logo.png" alt="Logomarca Kairos" width="130px" class="mb-5">
+        <section id="descricao-servicos" class="container text-center aos-init aos-animate">
+          <div class="my-5 pb-5">
+            <img src="/assets/logo.png" alt="Logomarca Kairos" width="130px" class="my-4 pb-4">
 
-            <h3 class="lh-5 mb-5 text-center bad-script-regular secondary no-select">Selecione um serviço para saber mais detalhes</h3>
+            <h3 class="lh-5 mb-5 text-center bad-script-regular secondary no-select">Selecione um serviço para saber o que ele pode oferecer</h3>
 
-            <div class="descricao-cards row gap-3 justify-content-center">
+            <div class="descricao-cards row gap-3 justify-content-center" data-aos="fade-up" data-aos-duration="900">
               
-              <a class="card" style="width: 18rem;" data-aos="flip-left" data-aos-duration="900">
+              <a href="#assistente-services" class="card" style="width: 18rem;">
                 <img src="../assets/assistant.png" class="card-img-top m-auto pt-3" alt="...">
                 <div class="card-body my-3">
                   <h5 class="card-title">Assistente virtual</h5>
@@ -86,7 +88,7 @@
                 </div>
               </a>
 
-              <a class="card transition" style="width: 18rem;" data-aos="flip-left" data-aos-duration="900">
+              <a href="#socialmedia-services" class="card transition" style="width: 18rem;">
                 <img src="../assets/midia-social.png" class="card-img-top m-auto pt-3" alt="...">
                 <div class="card-body my-3">
                   <h5 class="card-title">Social media</h5>
@@ -94,7 +96,7 @@
                 </div>
               </a>
 
-              <a class="card transition" style="width: 18rem;" data-aos="flip-left" data-aos-duration="900">
+              <a href="#fotos-services" class="card transition" style="width: 18rem;">
                 <img src="../assets/photographer.png" class="card-img-top m-auto pt-3" alt="...">
                 <div class="card-body my-3">
                   <h5 class="card-title">Fotos profissionais</h5>
@@ -102,7 +104,7 @@
                 </div>
               </a>
 
-              <a class="card transition" style="width: 18rem;" data-aos="flip-left" data-aos-duration="900">
+              <a href="#webdev-services" class="card transition" style="width: 18rem;">
                 <img src="../assets/web.png" class="card-img-top m-auto pt-3" alt="...">
                 <div class="card-body my-3">
                   <h5 class="card-title">Desenvolvimento web</h5>
@@ -110,7 +112,7 @@
                 </div>
               </a>
 
-              <a class="card transition" style="width: 18rem;" data-aos="flip-left" data-aos-duration="900">
+              <a href="#webhost-services" class="card transition" style="width: 18rem;">
                 <img src="../assets/world-wide-web.png" class="card-img-top m-auto pt-3" alt="...">
                 <div class="card-body my-3">
                   <h5 class="card-title">Domínio web</h5>
@@ -118,7 +120,7 @@
                 </div>
               </a>
 
-              <a class="card transition" style="width: 18rem;" data-aos="flip-left" data-aos-duration="900">
+              <a href="#juridico-services" class="card transition" style="width: 18rem;">
                 <img src="../assets/juridico.png" class="card-img-top m-auto pt-3" alt="...">
                 <div class="card-body my-3">
                   <h5 class="card-title">Assistência jurídica</h5>
@@ -126,130 +128,364 @@
                 </div>
               </a>
 
-              <a class="card transition" style="width: 18rem;" data-aos="flip-left" data-aos-duration="900">
+              <a href="#grafico-services" class="card transition" style="width: 18rem;">
                 <img src="../assets/material-grafico.png" class="card-img-top m-auto pt-3" alt="...">
                 <div class="card-body my-3">
                   <h5 class="card-title">Material gráfico</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
               </a>
+
             </div>
             
-            <div class="d-flex align-items-center justify-content-center my-5 gap-3 comfortaa-400 descricao-buttons">
-              <a href="#form-section"><button type="button" class="btn btn-primary btn-l px-4 me-md-2 rounded-pill fw-bold">Iniciar consulta</button></a>
+            <div class="d-flex align-items-center justify-content-center my-5 gap-3 comfortaa-400 btns-services">
+              <a href="#form-section"><button type="button" class="btn btn-primary btn-l px-4 me-md-2 rounded-pill fw-bold">Descobrir o que preciso</button></a>
               <button type="button" class="btn btn-outline-secondary btn-l px-4 rounded-pill">Tirar dúvidas</button>
             </div>
+
+            <img id="assistente-services" src="/assets/logo.png" alt="Logomarca Kairos" width="130px" class="my-4">
           </div>
+
         </section>
 
-        <div class="checks d-flex justify-content-center align-items-center fw-bold comfortaa-400">
-          <div class="check gap-3">
-            <svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
-              <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
-              <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
-            </svg>
-            <p>Marketing digital</p>
-          </div>
-
-          <div class="check gap-3">
-            <svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
-              <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
-              <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
-            </svg>
-            <p>Monitoramento de mídias e redes sociais</p>
-          </div>
-
-          <div class="check gap-3">
-            <svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
-              <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
-              <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
-            </svg>
-            <p>Fotografia profissional</p>
-          </div>
-
-          <div class="check gap-3">
-            <svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
-              <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
-              <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
-            </svg>
-            <p>Desenvolvimento web</p>
-          </div>
-          
-          <div class="check gap-3">
-            <svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
-              <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
-              <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
-            </svg>
-            <p>Gestão ágil</p>
-          </div>
-
-          <div class="check gap-3">
-            <svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
-              <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
-              <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
-            </svg>
-            <p>Assistência jurídica</p>
-          </div>
-        </div>
-
-        <section id="services-section" class="container my-5 pt-4 no-select text-center">
-
-          <img src="/assets/logo.png" alt="Logomarca Kairos" width="130px">
-
-          <h1 class="my-5 py-2- text-center fw-bold bad-script-regular secondary" data-aos="fade-down" data-aos-duration="800">Conheça alguns dos nossos serviços:</h2>
-
-          <div class="row py-2 mx-5 featurette d-flex align-items-center transition" data-aos="flip-down" data-aos-duration="1000">
-            <div class="col-md-7 my-4 text-center comfortaa-400">
-              <h2 class=" mb-4 secondary bad-script-regular">Assistente Virtual</h2>
-              <p class="lead">A <span class="fw-bold">Kairos</span> oferece suporte 24h com assistentes virtuais treinados para atender clientes, transcrever reuniões, monitorar agendamentos, traduzir documentos, entre outras aplicabilidades.</p>
-              <a href="/pages/servicos.html" class="comfortaa-400"><button class="rounded-pill">Saiba mais >></button></a>
+        <section id="services-services" class="pb-3">
+          <div class="container services-container aos-init aos-animate">
+            <div id="socialmedia-services" class="row my-4" data-aos="fade-up" data-aos-duration="900">
+              <div class="col col-img text-end">
+                <img src="../assets/assistente-services.png" alt="" width="550px" class="rounded-start-pill services-imgs opacity-75">
+              </div>
+              <div class="col">
+                <ul class="ul-services list-unstyled lh-lg">
+                  <li><h2 class="ps-1 fw-bold">Assistente virtual</h2></li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Atendimento ao cliente</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Transcrições de reuniões e audiências</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Criação e elaboração de documentos</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Marcação e acompanhamento de vôos/hoteis</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Orçamentos de viagens e eventos</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Envio de orçamentos de viagens e eventos</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Lembrança de compromissos agendados</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Gestão básica de aplicativos</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Tradução de documentos</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Acompanhamento de processos jurídicos</li>
+                </ul>
+              </div>
             </div>
-            <div class="col-md-5 text-center">
-              <img src="/assets/customer-service.png" alt="" width="30%" height="100%" loading="lazy">
+
+            <div id="fotos-services" class="row my-4" data-aos="fade-up" data-aos-duration="900">
+              <div class="col">
+                <ul class="ul-services list-unstyled lh-lg">
+                  <li><h2 class="text-end fw-bold">Social media</h2></li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Gerenciamento de redes sociais</li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Relatórios de desenvolvimento</li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Engajamento com audiência</li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Criação de branding</li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Posts autorais</li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Copywriter</li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Análise de perfil</li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Calendário editorial</li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Estratégia de marketing digital</li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Identificação de público alvo e persona</li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Criação de conteúdo direcionado para o nicho</li>
+                </ul>
+              </div>
+              <div class="col col-img">
+                <img src="../assets/socialmedia-services.jpg" alt="" width="550px" class="rounded-end-pill services-imgs-right opacity-75 mt-3">
+              </div>
             </div>
-          </div>
-  
-          <div class="row py-2 mx-5 featurette d-flex align-items-center transition" data-aos="flip-down" data-aos-duration="1000">
-            <div class="col-md-7 order-md-2 my-4 text-center comfortaa-400">
-              <h2 class="featurette-heading mb-4 secondary bad-script-regular">Social Media</h2>
-              <p class="lead">Nosso serviço de Social Media cria e implementa estratégias para aumentar o engajamento e promover sua marca nas redes sociais, garantindo uma presença online forte e eficaz.</p>
-              <a href="/pages/servicos.html"><button class="rounded-pill">Saiba mais >></button></a>
+
+            <div id="webdev-services" class="row align-items-center" data-aos="fade-up" data-aos-duration="900">
+              <div class="col text-end pt-2 col-img">
+                <img src="../assets/fotografo.jpg" alt="" width="550px" class="rounded-start-pill services-imgs opacity-75">
+              </div>
+              <div class="col">
+                <ul class="ul-services list-unstyled pt-3 lh-lg">
+                  <li><h2 class="fw-bold">Fotos profissionais</h2></li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Fotos em estúdio profissional</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Vídeos direcionados e making off</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Opções de estúdio atemporal e temático</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Fotos individuais e em grupo</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Posicionamento de identidade profissional</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Assessoria presencial no dia</li>
+                </ul>
+              </div>
             </div>
-            <div class="col-md-5 order-md-1 text-center">
-              <img src="/assets/social-media.png" alt="" width="30%" height="100%" loading="lazy">
+
+            <div id="webhost-services" class="row my-5" data-aos="fade-up" data-aos-duration="900">
+              <div class="col">
+                <ul class="ul-services list-unstyled lh-lg mt-3">
+                  <li><h2 class="text-end fw-bold">Desenvolvimento web</h2></li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Criação de páginas web</li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Design e formatação de sites</li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Adição de interatividade a sites</li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Criação de sites que funcionam bem em qualquer dispositivo</li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Adição de animações e efeitos visuais</li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Atualização de conteúdo dinâmico em tempo real</li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Garantia de que formulários funcionem corretamente</li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Uso de ferramentas populares para melhorar sites</li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Desenvolvimento de páginas que carregam rapidamente</li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Manutenção e melhorias contínuas de sites</li>
+                </ul>
+              </div>
+              <div class="col col-img">
+                <img src="../assets/web-dev.jpg" alt="" width="550px" class="rounded-end-pill services-imgs-right opacity-75 mt-3">
+              </div>
             </div>
-          </div>
-  
-          <div class="row py-2 mx-5 featurette d-flex align-items-center transition" data-aos="flip-down" data-aos-duration="1000">
-            <div class="col-md-7 my-4 text-center comfortaa-400">
-              <h2 class="featurette-heading mb-4 secondary bad-script-regular">Fotos profissionais</h2>
-              <p class="lead">Imagens profissionais de alta qualidade para destacar seu negócio, produtos ou serviços, ideais para websites, catálogos e redes sociais.</p>
-              <a href="/pages/servicos.html"><button class="rounded-pill">Saiba mais >></button></a>
+
+            <div id="juridico-services" class="row align-items-center" data-aos="fade-up" data-aos-duration="900">
+              <div class="col text-end pt-2 col-img">
+                <img src="../assets/dominio-web.jpg" alt="" width="550px" class="rounded-start-pill services-imgs opacity-75">
+              </div>
+              <div class="col">
+                <ul class="ul-services list-unstyled pt-3 lh-lg">
+                  <li><h2 class="fw-bold">Domínio web</h2></li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Registro e gerenciamento de domínios personalizados
+                </li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Configuração de domínio para melhorar a visibilidade no Google</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Criação de endereços de email empresariais personalizados</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Configuração de contas de email profissionais</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Monitoramento e renovação de domínios</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Suporte técnico para configuração de emails em dispositivos</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Garantia de segurança e proteção do domínio</li>
+                </ul>
+              </div>
             </div>
-            <div class="col-md-5 text-center">
-              <img src="assets/maquinas-fotograficas.png" alt="" width="30%" height="100%" loading="lazy">
+
+            <div id="grafico-services" class="row my-5 align-items-center" data-aos="fade-up" data-aos-duration="900">
+              <div class="col">
+                <ul class="ul-services list-unstyled lh-lg mt-4">
+                  <li><h2 class="text-end fw-bold">Assistência jurídica</h2></li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Consultas jurídicas com advogados especializados</li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Assessoria em processos judiciais e administrativos</li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Acompanhamento de processos jurídicos</li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Elaboração e revisão de contratos
+                </li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Orientação legal em questões trabalhistas
+                </li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Consultoria em direito empresarial
+                </li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Resolução de conflitos e mediação
+                </li>
+                  <li class="d-flex align-items-center justify-content-end gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Assistência em questões de direito de família e sucessões</li>
+                </ul>
+              </div>
+              <div class="col col-img">
+                <img src="../assets/juridica.jpg" alt="" width="550px" class="rounded-end-pill services-imgs-right opacity-75 mt-3">
+              </div>
             </div>
-          </div>
-  
-          <div class="row py-2 mx-5 featurette d-flex align-items-center transition" data-aos="flip-down" data-aos-duration="1000">
-            <div class="col-md-7 order-md-2 my-4 text-center comfortaa-400">
-              <h2 class="featurette-heading lh-1 secondary mb-4 bad-script-regular">Material Gráfico</h2>
-              <p class="lead">Criamos materiais gráficos impactantes e profissionais, como cartões de visita, brochuras e banners, para fortalecer a identidade da sua marca e atrair seu público-alvo.</p>
-              <a href="/pages/servicos.html"><button class="rounded-pill">Saiba mais >></button></a>
-            </div>
-            <div class="col-md-5 order-md-1 text-center">
-              <img src="assets/graphic-tool.png" alt="" width="30%" height="100%" loading="lazy">
+
+            <div id="" class="row align-items-center mt-2" data-aos="fade-up" data-aos-duration="900">
+              <div class="col text-end pt-2 col-img">
+                <img src="../assets/cartao-visita.jpg" alt="" width="480px" class="rounded-start-pill services-imgs opacity-75">
+              </div>
+              <div class="col">
+                <ul class="ul-services list-unstyled pt-4 lh-lg">
+                  <li><h2 class="fw-bold">Material gráfico</h2></li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Material personalizado com nome e/ou logo</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Cartões de visita em diversos materiais</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Kits profissionais e de escritório
+                </li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Brindes presenteáveis</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Agendas e planners</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Material timbrado</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Artigos com gravação a laser (Copor, garrafas, canetas)</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Sacolas e bolsas em papelão</li>
+                  <li class="d-flex align-items-center gap-1"><svg width="16" height="16" fill="currentColor" class="bi bi-check2-circle text-success" viewBox="0 0 16 16">
+                    <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                    <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+                  </svg>Fardamentos</li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
 
         <section id="form-section" class="text-center">
-          <img src="/assets/logo.png" alt="Logomarca Kairos" width="130px" class="m-auto pt-3">
+          <img src="/assets/logo.png" alt="Logomarca Kairos" width="130px" class="m-auto pt-5">
 
           <div class="text-form text-center m-auto p-3">
-            <h3 class="bad-script-regular my-4 secondary fw-bold no-select" data-aos="fade-up" data-aos-duration="1500">Compartilhe sua história com a <span class="fw-light">Kairos</span> e acelere o crescimento do seu negócio!</h3>
+            <h3 class="bad-script-regular my-5 secondary fw-bold no-select" data-aos="fade-up" data-aos-duration="1500">Não sabe qual serviço escolher?</h3>
   
-            <p class="comfortaa-400 text-white">Nossa consultoria se dedica a identificar e aprimorar os aspectos cruciais do seu empreendimento. Oferecemos um leque de serviços personalizados para elevar o desempenho e maximizar o crescimento do seu negócio.</p>
+            <p class="comfortaa-400 text-white">Preencha nosso formulário de identificação de perfil profissional e um de nossos especialistas entrará em contato para te guiar nos serviços mais indicados para a sua situação.</p>
           </div>
   
           <div class="form-email text-center card p-4 m-auto comfortaa-400 fw-bold">
@@ -268,12 +504,12 @@
         <section id="duvidas-section" class="py-5">
           <div class="d-flex flex-column align-items-center py-5 no-select">
   
-            <h1 class="fw-bold comfortaa-400 text-white">Dúvidas?</h1>
+            <h1 class="fw-bold comfortaa-400 text-white">Ainda possui dúvidas?</h1>
   
             <div class="mx-auto comfortaa-400 text-center">
-              <p class="lead text-white fw-bold mx-2">Fale com nossa equipe pelo WhatsApp!</p>
-              <div class="d-grid gap-2 mx-2">
-                <button type="button" class="btn btn-primary rounded-pill fw-bold"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp text-success me-2" viewBox="0 0 16 16">
+              <p class="lead text-white fw-bold py-3">Nossa equipe está disponível para ajudar através do WhatsApp!</p>
+              <div class="gap-2 mx-2">
+                <button type="button" class="btn btn-primary rounded-pill fw-bold"><svg width="16" height="16" fill="currentColor" class="bi bi-whatsapp text-success me-2" viewBox="0 0 16 16">
                   <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
                 </svg>Entrar em contato</button>
               </div>
@@ -287,7 +523,7 @@
       <div class="d-flex flex-wrap justify-content-between align-items-center py-3 container">
         <div class="col-md-4 d-flex align-items-center">
           <a href="index.html" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-            <img src="assets/logo.png" alt="Logomarca Kairos" class="logo-footer">
+            <img src="../assets/logo.png" alt="Logomarca Kairos" class="logo-footer">
           </a>
           <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Kairos</span>
         </div>

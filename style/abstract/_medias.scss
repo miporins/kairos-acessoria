@@ -58,5 +58,24 @@
                 margin-bottom: 0;
             }
         }
+
+        // Página de serviços
+        #services-services {
+            
+            h2 {
+                text-align: center!important;
+            }
+
+            .ul-services {
+                li {
+                    justify-content: start!important;
+
+                }
+            }
+
+            .col-img {
+                display: none;
+            }
+        }
     }
 }

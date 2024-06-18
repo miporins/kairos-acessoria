@@ -107,6 +107,15 @@
     font-size: 33px;
     margin-bottom: 0;
   }
+  main #services-services h2, main #services-services .h2 {
+    text-align: center !important;
+  }
+  main #services-services .ul-services li {
+    justify-content: start !important;
+  }
+  main #services-services .col-img {
+    display: none;
+  }
 }
 body {
   background: #FAF0E6 !important;
@@ -273,6 +282,24 @@ main .title-services .img-title-services {
   background-color: #530e20 !important;
   border: 1px solid #530e20 !important;
 }
+#descricao-servicos .btns-services .btn-primary {
+  background-color: #e6b0be;
+  color: #b42447;
+  border: 1px solid #e6b0be;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+  font-family: "Comfortaa", sans-serif;
+}
+#descricao-servicos .btns-services .btn-primary:hover {
+  background-color: #b42447;
+  border: 1px solid #b42447;
+  color: #ffffff;
+}
+#descricao-servicos .btns-services .btn-primary:active {
+  background-color: #530e20 !important;
+  border: 1px solid #530e20 !important;
+}
+
 #carousel-section {
   background: #530e20;
   max-width: 100%;
@@ -477,6 +504,29 @@ body .border-top .logo-footer {
 }
 #descricao-servicos .descricao-cards img {
   max-width: 50px;
+}
+
+#services-services .row .services-imgs {
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+#services-services .row .services-imgs-right {
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
+#services-services .row .ul-services h2, #services-services .row .ul-services .h2 {
+  font-family: "Bad Script", cursive;
+  font-weight: 400;
+  font-size: 35px;
+  font-style: normal;
+  color: #b42447;
+}
+#services-services .row .ul-services li {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #4b0e1e;
 }
 
 :root,

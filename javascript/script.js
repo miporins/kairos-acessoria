@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
   handleResize();
   
-  // Adicione o listener para o evento de redimensionamento
+  // Listener para o evento de redimensionamento
   window.addEventListener('resize', handleResize);
 
   // Add header class on scroll

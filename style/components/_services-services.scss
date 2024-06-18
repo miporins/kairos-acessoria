@@ -1,0 +1,61 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+#services-services {
+
+    .row {
+        .services-imgs {
+            border-top-right-radius: 60px;
+            border-bottom-right-radius: 60px;
+        }
+
+        .services-imgs-right {
+            border-top-left-radius: 60px;
+            border-bottom-left-radius: 60px;
+        }
+
+        .ul-services {
+
+            h2 {
+                @include mixins.font-title;
+            }
+
+            li {
+                @include mixins.font-subtitle;
+            }
+        }
+    }
+
+    // .row {
+    //     padding: 20px 0;
+
+        
+    //     display: flex;
+    //     justify-content: center;
+
+    //     .row-background {
+    //         background-color: #ab9298;
+    //         color: variaveis.$bg-white!important;
+    //     }
+
+    //     img {
+    //         max-width: 600px;
+    //         border-radius: 60%;
+    //     }
+
+    //     h2 {
+    //         @include mixins.font-title;
+    //         max-width: 450px;
+    //     }
+    // }
+
+    // ul {
+    //     max-width: 450px;
+    //     font-size: 14px;
+    // }
+
+    // li {
+    //     text-align: center!important;
+    // }
+
+}
